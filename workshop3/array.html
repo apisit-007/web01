@@ -1,0 +1,30 @@
+<html>
+    <head>
+ 
+    </head>
+    <body>
+        <h1>Fruit Shop</h1>
+        <script>
+            let fruit=["ส้มโอ","มะม่วง","ทุเรียน","แตงโม","มะพร้าว"];
+            let price=[80, 50, 149, 50, 2];
+            let unit=["ลูก","โล","โล","ลูก","ลูก"];
+            let qty=[5,3,4,8,7];
+            let total=[];
+            let sum=0;
+            document.write("<table border='1'>");
+            document.write("<tr><th>ผลไม้</th><th>จำนวน</th><th>หน่วย</th><th>ราคา</th><th>รวม</th>")
+            for(i=0; i<5; i++){
+                total[i]=price[i]*qty[i];
+                sum+=total[i];
+            document.write("<tr><td><img src='image/",i,".jpg' width=80</td>",
+                        "<td>",qty[i],"</td>",
+                        "<td>",unit[i],"</td>",
+                        "<td>",price[i],"</td>",
+                        "<td>",total[i],"</td>",
+            );
+            }
+            document.write("</table>");
+            document.write("รวมทั้งหมด ",sum," บาท");
+        </script>
+    </body>
+</html>
